@@ -10,7 +10,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  embold-scan:
+  embold-scan_fc:
     runs-on: ubuntu-latest
 
     steps:
