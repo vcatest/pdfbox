@@ -20,7 +20,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Step 2: Download and extract the Embold scanner
+      ## Step 2: Download and extract the Embold scanner
       - name: Download and Extract Scanner
         run: |
           curl https://v1.embold.io/nfs/CLI/browserstack-codequality-scanner.tar.gz -o browserstack-codequality-scanner-archive.tar.gz
