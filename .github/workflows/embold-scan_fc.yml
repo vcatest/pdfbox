@@ -42,7 +42,7 @@ jobs:
         run: |
           curl --silent --location --request GET "http://18.184.13.138:3089/api/v1/repositories/b05460d75ef4a7290f0911db5682eb18/scans/config/download" --header "Authorization: Bearer ${{ secrets.EMBOLD_SCAN_TOKEN_FC }}" -o repository-configuration.json
 
-      # Step 6: Run the Embold analysis scanner
+      ## Step 6: Run the Embold analysis scanner
       - name: Run Embold Scanner
         env:
           EMBOLD_TOKEN: ${{ secrets.EMBOLD_SCAN_TOKEN_FC }}
